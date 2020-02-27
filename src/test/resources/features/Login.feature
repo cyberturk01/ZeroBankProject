@@ -1,10 +1,10 @@
 Feature: Login Page
-#  @wip
+  @wip @smoke
   Scenario: Login and/or password are wrong
     Given users should be able to login to the application
     When user logs in with valid credentials
     Then Account summary page should display
-#  @wip
+  @wip @smoke
   Scenario Outline: Login with wrong credentials
     Given users should be able to login to the application
     When users with wrong "<username>" and "<password>" should not be able to login
